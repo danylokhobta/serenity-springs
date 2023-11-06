@@ -1,0 +1,59 @@
+#aboutUs{
+    position:relative;
+    width: 100%;
+    background-color: #958977;
+    padding-top: 96px;
+    padding-bottom: 48px;
+}
+#aboutUs h4{
+    position: relative;
+    max-width: 856px;
+    margin:0 auto;
+    padding:20px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 38px;
+    font-weight: 200;
+}
+#aboutUs h4 span{
+    font-weight: 400;
+    font-style: italic;
+    margin-left: 21%;
+}
+
+#aboutUs .quote{
+    position: relative;
+    width: 100%;
+    margin-top: 96px;
+}
+#aboutUs .quote img{
+    position: relative;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    width: 416px;
+}
+#aboutUs .quote p{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    font-size: 48px;
+    font-weight: 200;
+    white-space: nowrap;
+}
+
+@media screen and (max-width: 1150px) {
+    #aboutUs{
+        padding-top: 50px;
+        padding-bottom: 24px;
+    }
+}
+@media screen and (max-width: 900px) {
+    #aboutUs h4{
+        font-size: 28px;
+    }
+    #aboutUs .quote{
+        margin-top: 52px;
+    }
+}

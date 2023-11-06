@@ -1,0 +1,235 @@
+header{
+    position:relative;
+    width:100%;
+    background-image: url("../images/header/background.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/*NAVIGATION BAR*/
+header nav{
+    position: relative;
+    width: 100%;
+    padding-top: 52px;
+    z-index: 10;
+}
+header nav .menu, header nav .socials{
+    position: absolute;
+    display: flex;
+    list-style-type: none;
+    white-space: nowrap;
+    cursor: pointer;
+}
+header nav .menu{
+    left:50%;
+    transform: translateX(-50%);
+    gap:28px;
+    font-family: 'Playfair Display', serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+header nav .socials{
+    right:3.7%;
+    gap:23px;
+    font-size: 23px;
+}
+header nav .logo{
+    position: absolute;
+    left:3.7%;
+}
+header nav ul{
+    padding:0;
+    margin:0;
+}
+
+/*MENUBTN*/
+nav .menubtn{
+    position: absolute;
+    margin-top: 20px;
+    right:3.7%;
+    height: 16px;
+    width:30px;
+    display:none;
+    cursor: pointer;
+    transition: .2s;
+    z-index: 20;
+}
+nav .menubtn:hover{
+    opacity: .5;
+}
+nav .menubtn span{
+    position: absolute;
+    left:0;
+    background-color: white;
+    width: 30px;
+    height:2px;
+    border-radius: 5px;
+    transition: .4s;
+}
+nav .menubtn span:nth-child(1){
+    top:0;
+}
+nav .menubtn span:nth-child(2){
+    top:50%;
+    transform: translateY(-50%);
+}
+nav .menubtn span:nth-child(3){
+    bottom:0;
+    width: 22px;
+}
+
+/*TEXT*/
+header .content{
+    position:relative;
+    padding-top:30px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+header h2{
+    margin:25px;
+    font-family: 'Playfair Display', serif;
+    font-size: 86px;
+    font-weight: 900;
+    line-height: 100%;
+    letter-spacing: 2%;
+    font-style: italic;
+}
+header h2 span{
+    line-height: 80%;
+    font-size: 200px;
+    -webkit-text-stroke-width: 1px;  
+    -webkit-text-stroke-color: white;  
+    -webkit-text-fill-color: transparent;
+
+    -moz-text-stroke-width: 1px;  
+    -moz-text-stroke-color: white;  
+    -moz-text-fill-color: transparent;
+
+    -ms-text-stroke-width: 1px;  
+    -ms-text-stroke-color: white;  
+    -ms-text-fill-color: transparent;
+}
+header p{
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 100;
+    margin-top: 25px;
+}
+
+/* BUTTON */
+header button{
+    position:relative;
+    width:160px;
+    height:40px;
+    margin: 20px;
+    font-family: 'Playfair Display', serif;
+    font-size: 13px;
+    font-weight: 700;
+    color:black;
+    border:1px solid white;
+    border-radius: 3px;
+    cursor:pointer;
+    transition: .2s;
+}
+header button:hover{
+    background-color: transparent;
+    color: white;
+}
+
+header .ellipse{
+    position: absolute;
+    top: -880px;
+    left:50%;
+    transform:translateX(-50%);
+    z-index: 0;
+}
+header .branch{
+    position: relative;
+    height:74px;
+}
+
+@media screen and (min-width: 950px) {
+    header nav .hiddenMenu{
+        opacity:1 !important;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    nav .menubtn{
+        display: flex;
+    }
+
+    header nav .hiddenMenu{
+        position:fixed;
+        top:-100%;
+        right:0;
+        width:100%;
+        height:100vh;
+        opacity:0;
+        backdrop-filter: blur(20px);
+        background-color: rgba(108, 100, 86, 0.9); 
+        text-align: center;
+        transition: opacity 0.4s;
+    }
+
+    header nav .menu{
+        left:50%;
+        top:50%;
+        transform: translate(-50%,-50%);
+        display: block;
+        font-family: 'Playfair Display', serif;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 150%;
+        letter-spacing: 3px;
+        font-style: italic;
+    }
+    header nav .socials{
+        right:50%;
+        transform: translateX(50%);
+        bottom:5%;
+        gap:23px;
+        font-size: 23px;
+    }
+    header nav .logo{
+        position: absolute;
+        left:3.7%;
+    }
+    header nav ul{
+        padding:0;
+        margin:0;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    header nav{
+        padding-top: 20px;
+    }
+    header nav .logo img{
+        width:70%;
+    }
+    
+    header .content{
+        padding-top:35px;
+    }
+    header h2{
+        font-size: 65px;
+        line-height: 110%;
+        letter-spacing: 4%;
+    }
+    header h2 span{
+        line-height: 80%;
+        font-size: 170px;
+    }
+    header p{
+        font-size: 16px;
+    }
+    header .ellipse{
+        top: -890px;
+    }
+    header .branch{
+        height:70px;
+    }
+}

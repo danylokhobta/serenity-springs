@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;0,900;1,700;1,900&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="css/resolution.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/aboutUs.css">
+    <link rel="stylesheet" href="css/ourServices.css">
+    <link rel="stylesheet" href="css/reservation.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+    <script src="js/header.js"></script>
+    <title>Serenity Springs</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        }
+    ::selection {
+        color: #6C6456;
+        background: white;
+    }
+    
+    html, body{
+        scroll-behavior: smooth;
+        padding:0;
+        overflow: visible;
+        overflow-x: hidden;
+        color:white;
+    }
+    a{
+        text-decoration: none;
+        color:white;
+    }
+    h1{
+        position: absolute;
+        top:50%;
+        left: 3,7%;
+        transform: translateY(-50%) rotate(-90deg);
+        font-family: 'Raleway', sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        z-index: 0;
+    }
+    li a{transition: .2s}
+    li a{color: white}
+    li a:hover{color:#deccab}
+    img, button, nav, #ourServices .bg-text{
+        user-select: none;
+    }
+    @media screen and (max-width: 1150px) {
+        h1{
+            position: relative;
+            top:auto;
+            text-align: center;
+            margin-bottom:45px;
+            transform: translateY(0) rotate(0deg);
+        }
+    }
+</style>
+<body>
+    <header id="header">
+
+        <nav>
+            <div class="logo"><img src="images/nav/logo.svg"></div>
+            <div class="menubtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="hiddenMenu">
+                <ul class="menu">
+                    <li><a href="#aboutUs">ABOUT US</a></li>
+                    <li><a href="#ourServices">OUR SERVICES</a></li>
+                    <li><a href="#reservation">RESERVATION</a></li>
+                </ul>
+                <ul class="socials">
+                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="content">
+            <img src="images/header/ellipse.svg" class="ellipse">
+
+            <h2>Relax,<br>unwind,<br><span>&</span><br>rejuvenate</h2>
+            <p><i><b>Serenity Springs: </b></i> The ultimate spa experience in Santa Monica.</p>
+            <a href="#reservation"><button>BOOK NOW</button></a><br>
+
+            <img src="images/header/branch.svg" class="branch">
+        </div>
+    </header>
+
+    <div id="aboutUs">
+        <h1>ABOUT US</h1>
+        <h4><span>At Serenity Springs,</span> we believe that everyone deserves a little pampering and relaxation. Our luxurious spa treatments are designed to soothe the mind, body, and soul, leaving you feeling rejuvenated and refreshed. From the moment you step through our doors, you'll feel a sense of peace and tranquility that will stay with you long after your visit.</h4>
+        <div class="quote">
+            <img src="images/aboutUs/lady.png">
+            <p>Treat yourself to a revitalizing facial and reveal glowing, healthy skin ... </p>
+        </div>
+    </div>
+
+    <div id="ourServices">
+        <img src="images/ourServicesFiller.svg" class="filler">
+        <h1>OUR SERVICES</h1>
+        <div class="table">
+            <div class="serv-1">
+                <div class="title">Massage Therapy</div>
+                <div class="line"></div>
+                <div class="description">Whether you're looking to relax, alleviate muscle tension, or reduce stress, our skilled massage therapists will customize a treatment to meet your unique needs. Choose from a variety of massage styles including Swedish, deep tissue, hot stone, and more.</div>
+            </div>
+            <div class="serv-2">
+                <div class="title">Anti-aging Facials</div>
+                <div class="line"></div>
+                <div class="description">Our experienced estheticians use only the finest products to nourish, hydrate, and revitalize your skin. From anti-aging treatments to acne-fighting facials, we offer a range of options to help you achieve healthy, glowing skin.</div>
+            </div>
+            <div class="serv-3">
+                <div class="title">Body Treatments</div>
+                <div class="line"></div>
+                <div class="description">Our indulgent body treatments are designed to detoxify, exfoliate, and hydrate your skin, leaving you feeling renewed and refreshed. Choose from a variety of options including body scrubs, wraps, and more.</div>
+            </div>
+            <div class="serv-4">
+                <div class="title">Wellness Services</div>
+                <div class="line"></div>
+                <div class="description">We believe in taking a holistic approach to wellness, which is why we offer a variety of services that promote total body wellness. From acupuncture to reiki, our skilled practitioners will help you achieve optimal health and wellbeing.</div>
+            </div>
+        </div>
+        <h2 class="bg-text">services</h2>
+    </div>
+
+    <div id="reservation">
+        <img src="images/reservation/filler.svg" class="filler">
+        <h1>RESERVATION</h1>
+        <div class="text">
+            <h4>Ready to indulge in some much-needed relaxation?<br>Call us today at <span>(310) 123-4567</span> or email <span>res@serenitys.com</span><br>
+            to schedule your appointment</h4>
+            <p> If you prefer to book your appointment in person, feel free to stop by our Santa Monica location at 1234 Ocean Avenue.</p>
+        </div>
+    </div>
+
+    <footer>
+        <nav>
+            <ul class="menu alignLeft">  
+                <li><a href="#aboutUs">ABOUT US</a></li>
+                <li><a href="#ourServices">OUR SERVICES</a></li>
+                <li><a href="#reservation">RESERVATION</a></li>
+            </ul>
+            <div class="logo alignCenter"><img src="images/nav/logo.svg"></div>
+            <ul class="socials alignRight">
+                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+            </ul>
+        </nav>
+
+        <span class="source">Website design by <a href="https://xide.co.uk" target="_blank">XIDE</a></span>
+    </footer>
+</body>
+</html>

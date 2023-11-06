@@ -1,0 +1,64 @@
+#reservation{
+    position:relative;
+    min-height:820px;
+    width:100%;
+    padding:0;
+    background-image: url("../images/reservation/background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#reservation .filler{
+    position:relative;
+    width:97px;
+    margin:auto;
+    padding-top:96px;
+    display:block;
+}
+#reservation .text{
+    position: absolute;
+    top:50%;
+    left:50%;
+    width: 100%;
+    max-width:714px;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    text-align: center;
+}
+#reservation h4{
+    margin:0;
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    line-height: 120%;
+    font-weight: 900;
+    font-style: italic;
+}
+#reservation span{
+    font-family: 'Raleway', sans-serif !important;
+    font-weight: 100;
+    font-style:normal;
+}
+#reservation p{
+    margin:0;
+    margin-top: 41px;
+    font-family: 'Raleway', sans-serif !important;
+    font-size: 23px;
+    font-weight: 200;
+}
+@media screen and (max-width: 1150px) {
+    #reservation .filler{
+        padding-top:48px;
+    }
+    #reservation h1{
+        padding-top:40px;
+    }
+}
+@media screen and (max-width: 690px) {
+    #reservation h4{
+        font-size: 36px;
+        font-weight: 700;
+    }
+    #reservation p{
+        font-size: 18px;
+    }
+}

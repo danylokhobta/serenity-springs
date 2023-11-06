@@ -1,0 +1,116 @@
+#ourServices{
+    position:relative;
+    background-color: #958977;
+    padding:20px;
+    padding-bottom: 50px;
+    padding-top: 48px;
+}
+#ourServices .filler{
+    position: relative;
+    margin-bottom: 96px;
+    left:50%;
+    transform: translateX(-50%);
+}
+#ourServices .table{
+    position: relative;
+    max-width: 966px;
+    margin:auto;
+    z-index: 1;
+}
+#ourServices .table .serv-1,
+#ourServices .table .serv-2,
+#ourServices .table .serv-3,
+#ourServices .table .serv-4{
+    position:relative;
+    display:flex;
+    margin-bottom: 46px;
+}
+#ourServices .title{
+    position: relative;
+    min-width:302px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    font-style: italic;
+    white-space: nowrap;
+}
+#ourServices .line{
+    position: relative;
+    min-width:100px;
+    height:1px;
+    margin-top:7px;
+    background-color: white;
+}
+#ourServices .description{
+    position: relative;
+    max-width: 416px;
+    margin-left:38px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 200;
+}
+#ourServices .bg-text{
+    position: absolute;
+    bottom:0;
+    left:50%;
+    margin:0;
+    transform: translateX(-50%);
+    font-family: 'Playfair Display', serif;
+    font-size: 383px;
+    font-weight: 700;
+    font-style: italic;
+    z-index: 0;
+
+    -webkit-text-stroke-width: 0.5px;  
+    -webkit-text-stroke-color: #6C6456;  
+    -webkit-text-fill-color: #958977;
+
+    -moz-text-stroke-width: 0.5px;  
+    -moz-text-stroke-color: #6C6456;  
+    -moz-text-fill-color: #958977;
+
+    -ms-text-stroke-width: 0.5px;  
+    -ms-text-stroke-color: #6C6456;  
+    -ms-text-fill-color: #958977;
+}
+
+@media screen and (max-width: 1150px) {
+    #ourServices{
+        padding-top: 24px;
+    }
+    #ourServices .filler{
+        margin-bottom: 40px;
+    }
+}
+@media screen and (max-width: 900px) {
+    #ourServices .table{
+        display: flex;
+        flex-wrap: wrap;
+        gap:10%;
+    }
+    #ourServices .table .serv-1,
+    #ourServices .table .serv-2,
+    #ourServices .table .serv-3,
+    #ourServices .table .serv-4{
+        display:block;
+        width:45%;
+    }
+    #ourServices .line{
+        width:100px;
+        margin-top:15px;
+        margin-bottom: 15px;
+    }
+    #ourServices .description{
+        position: relative;
+        max-width: 416px;
+        margin-left:0px;
+    }
+}
+@media screen and (max-width: 670px) {
+    #ourServices .table .serv-1,
+    #ourServices .table .serv-2,
+    #ourServices .table .serv-3,
+    #ourServices .table .serv-4{
+        width:100%;
+    }
+}
